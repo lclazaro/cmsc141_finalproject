@@ -1,0 +1,95 @@
+Task 1: Game state frontend design (Refer to figma game outline: https://www.figma.com/design/PTu8rwzzVS55QWJRemRTB7/Untitled?node-id=0-1&t=OgK3KMmEnqpbTvW2-1)
+		+ your task is to beautify the figma design since outline raman to. The required buttons are there. All you have to do is beautify it para magamit nato sa pag design in code.
+			- Recommended that you use your own figma design for this aron mas organized and dali ang pag export to images. Para kahibaw mi which is which.
+			+ buttons in each state (note: buttons changes design when cursors hovers on them)
+				play
+				demo
+				exit
+				... and so on. Please refer to the figma nalang.
+				
+			+ object sprites and animations (12 fps or 15 fps)
+				character animation for each of all 5 characters (required)
+					up
+					down
+					left
+					right
+					dash
+					run
+					walk
+				optional animation
+					trees
+					bushes
+					base
+					and other objects
+
+Deadline: Wednesday, May 29
+
+
+
+
+
+
+
+Task 2: Game state design in code
+	+ Create every state in Godot and import all designs made from task 1. So ikaw na bahala sa magconvert sa figma design into Godot.
+
+Deadline: Thursday, May 30
+
+
+
+
+
+
+
+Task 3: Formal DFA table for the game state routing and game state routing logic code
+	+ Route every button to their corresponding state. Refer sa figma design for this. For example, and `play` button sa q0 kay muadto sa q1. So ikaw maghandle sa routing if naay iclick na button. Prepare nalang sad ug formal DFA table for this routing.
+
+Deadline: Friday, May 31
+
+
+
+
+
+
+
+
+Task 4: Game logic in demo(q2) and actual game(q4)
+	+ Create main logic for the game.
+		+Create DFA table for game logic in q4.
+		+Program player behaviors.
+	+ Finalize demo
+
+Deadline: Sunday, June 2
+
+
+
+
+
+Task 5: Polish the game. 
+	+ Fix bugs
+Deadline: Monday, June 3
+
+
+
+
+Task 6: Beautify the overall game.
+	+ Music and sound effects
+
+Deadline: Tuesday, June 4
+
+
+
+
+
+
+
+Task 7: Create Trailer and Canva Report
+	+ Create gameplay and video Trailer
+	+ Create canva Report
+
+Deadline: Wednesday, June 5
+
+
+
+Task 8: Presentation
+Deadline: Thursday, June 6
