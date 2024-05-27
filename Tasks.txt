@@ -67,15 +67,18 @@ Deadline: Sunday, June 2
 
 
 
-Task 5: Polish the game. 
+Task 5: Polish and beautify the game.
+	+ Music and sound effects
+	+ Logo in desktop shortcut
 	+ Fix bugs
 Deadline: Monday, June 3
 
 
 
 
-Task 6: Beautify the overall game.
-	+ Music and sound effects
+Task 6: Package the overall game.
+	+ Finalize and organize git repository
+	+ Create a shareable .exe file
 
 Deadline: Tuesday, June 4
 
