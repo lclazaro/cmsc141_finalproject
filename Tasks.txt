@@ -16,12 +16,14 @@ Task 1: Game state frontend design (Refer to figma game outline: https://www.fig
 					dash
 					run
 					walk
-				optional animation
+				optional environment animation
 					trees
 					bushes
 					base
 					and other objects
 
+			+ overall theme of the game is playground
+			
 Deadline: Wednesday, May 29
 
 
