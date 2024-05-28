@@ -1,0 +1,8 @@
+Godot Tutorials
+
+Routing game states or Godot scenes to other states using buttons (Note: This is not DFA implementation. Pero pwede ra sya mamodify into DFA)
+	https://www.youtube.com/watch?v=vsKxB66_ngw
+
+Creating Pause/Resume overlay
+	https://www.youtube.com/watch?v=JEQR4ALlwVU
+
