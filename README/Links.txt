@@ -8,3 +8,6 @@ Creating Pause/Resume overlay
 
 Creating dynamic screen sizes for game
 	https://www.youtube.com/watch?v=blPqie3Z_F0
+
+Creating player behavior using state machines
+	https://www.youtube.com/watch?v=4WSXdheBNPo
