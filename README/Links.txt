@@ -6,3 +6,5 @@ Routing game states or Godot scenes to other states using buttons (Note: This is
 Creating Pause/Resume overlay
 	https://www.youtube.com/watch?v=JEQR4ALlwVU
 
+Creating dynamic screen sizes for game
+	https://www.youtube.com/watch?v=blPqie3Z_F0
