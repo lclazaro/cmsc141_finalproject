@@ -1,3 +1,43 @@
-[gd_scene format=3 uid="uid://cu7e4bmthsh4h"]
+[gd_scene load_steps=6 format=3 uid="uid://cu7e4bmthsh4h"]
+
+[ext_resource type="Texture2D" uid="uid://5f4u1kkmhygq" path="res://Game States/q1/vfx/-m character selection.png" id="1_lp6t0"]
+[ext_resource type="Texture2D" uid="uid://dc8fbmih612mo" path="res://Game States/q1/vfx/Character Selection[START].png" id="2_67sbi"]
+[ext_resource type="Texture2D" uid="uid://cvlm0po3e2k5i" path="res://Game States/q1/vfx/Character Selection[START] (1).png" id="3_f3vd3"]
+[ext_resource type="Texture2D" uid="uid://xj8yiec1qy5u" path="res://Game States/q1/vfx/Exit Button.png" id="4_jxi3r"]
+[ext_resource type="Texture2D" uid="uid://bax0jlw1wq2q7" path="res://Game States/q1/vfx/Sound Button.png" id="5_uifty"]
 
 [node name="Q1" type="Node2D"]
+
+[node name="-mCharacterSelection" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.667, 0.667)
+texture = ExtResource("1_lp6t0")
+centered = false
+
+[node name="Start" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 511.0
+offset_top = 630.0
+offset_right = 867.0
+offset_bottom = 753.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("2_67sbi")
+texture_hover = ExtResource("3_f3vd3")
+
+[node name="Exit" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1108.0
+offset_top = 57.0
+offset_right = 1161.0
+offset_bottom = 105.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("4_jxi3r")
+
+[node name="Sound" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1168.0
+offset_top = 56.0
+offset_right = 1221.0
+offset_bottom = 104.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("5_uifty")

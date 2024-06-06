@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://5sl6t1nhtkep"]
+
+[ext_resource type="Texture2D" uid="uid://cbdtfva0vn3qa" path="res://Game States/q5/vfx/-m Pause Phase 1.png" id="1_6l45h"]
+[ext_resource type="Texture2D" uid="uid://drkaakiul2d5k" path="res://Game States/q5/vfx/Pause Phase[RESUME].png" id="2_sjp6u"]
+[ext_resource type="Texture2D" uid="uid://dfaus87cprb7s" path="res://Game States/q5/vfx/Pause Phase[RESUME] (3).png" id="3_dbr8e"]
+[ext_resource type="Texture2D" uid="uid://d1cuuqxnmtvo1" path="res://Game States/q5/vfx/Pause Phase[EXIT].png" id="4_li2i2"]
+[ext_resource type="Texture2D" uid="uid://buni82cec014g" path="res://Game States/q5/vfx/Pause Phase[exit] (1).png" id="5_u05ic"]
+[ext_resource type="Texture2D" uid="uid://kflqd35mnucp" path="res://Game States/q5/vfx/Sound Button.png" id="6_y0r7g"]
+
+[node name="Q5" type="Node2D"]
+
+[node name="-mPausePhase1" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.667, 0.667)
+texture = ExtResource("1_6l45h")
+centered = false
+
+[node name="Resume" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 543.0
+offset_top = 414.0
+offset_right = 835.0
+offset_bottom = 514.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("2_sjp6u")
+texture_hover = ExtResource("3_dbr8e")
+
+[node name="Exit" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 543.0
+offset_top = 492.0
+offset_right = 835.0
+offset_bottom = 592.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("4_li2i2")
+texture_hover = ExtResource("5_u05ic")
+
+[node name="Sound" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1167.0
+offset_top = 57.0
+offset_right = 1220.0
+offset_bottom = 105.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("6_y0r7g")

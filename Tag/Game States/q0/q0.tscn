@@ -1,14 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://ehrvkbw47qlt"]
+[gd_scene load_steps=11 format=3 uid="uid://ehrvkbw47qlt"]
 
 [ext_resource type="Script" path="res://Game States/q0/q0.gd" id="1_qtdd7"]
 [ext_resource type="AudioStream" uid="uid://ctf3s5hj0ej6q" path="res://Game States/q0/sfx/q0_bgmusic.mp3" id="2_hxalc"]
 [ext_resource type="Texture2D" uid="uid://bgfb64p7ti8n4" path="res://Game States/q0/vfx/-m Main Menu.png" id="3_b6y1v"]
 [ext_resource type="Texture2D" uid="uid://87ir4jpyya5n" path="res://Game States/q0/vfx/Main Menu [PLAY].png" id="4_aap7v"]
 [ext_resource type="Texture2D" uid="uid://byfkbe3y147j0" path="res://Game States/q0/vfx/Main Menu [DEMO].png" id="5_i7m86"]
+[ext_resource type="Texture2D" uid="uid://cdfjjxpsb8qam" path="res://Game States/q0/vfx/Main Menu [PLAY] (1).png" id="5_vmuwh"]
 [ext_resource type="Texture2D" uid="uid://fvt55nkvbrwa" path="res://Game States/q0/vfx/Main Menu [EXIT].png" id="6_otifi"]
+[ext_resource type="Texture2D" uid="uid://ciq3d8lvi37qy" path="res://Game States/q0/vfx/Main Menu [DEMO] (1).png" id="7_40ol7"]
 [ext_resource type="Texture2D" uid="uid://c8v3ha7ghlgy4" path="res://Game States/q0/vfx/Sound Button.png" id="7_uh126"]
+[ext_resource type="Texture2D" uid="uid://ob72oys70kdn" path="res://Game States/q0/vfx/Main Menu [EXIT] (1).png" id="9_apuda"]
 
-[node name="q0" type="Control"]
+[node name="Q0" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1282.0
@@ -32,6 +35,7 @@ offset_right = 845.0
 offset_bottom = 565.0
 scale = Vector2(0.667, 0.667)
 texture_normal = ExtResource("4_aap7v")
+texture_hover = ExtResource("5_vmuwh")
 
 [node name="Demo" type="TextureButton" parent="."]
 layout_mode = 0
@@ -41,6 +45,7 @@ offset_right = 845.0
 offset_bottom = 647.0
 scale = Vector2(0.667, 0.667)
 texture_normal = ExtResource("5_i7m86")
+texture_hover = ExtResource("7_40ol7")
 
 [node name="Exit" type="TextureButton" parent="."]
 layout_mode = 0
@@ -50,6 +55,7 @@ offset_right = 845.0
 offset_bottom = 731.0
 scale = Vector2(0.667, 0.667)
 texture_normal = ExtResource("6_otifi")
+texture_hover = ExtResource("9_apuda")
 
 [node name="Sound" type="TextureButton" parent="."]
 layout_mode = 0
