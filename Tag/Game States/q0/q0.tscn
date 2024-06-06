@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://ehrvkbw47qlt"]
+
+[ext_resource type="Script" path="res://Game States/q0/q0.gd" id="1_qtdd7"]
+[ext_resource type="AudioStream" uid="uid://ctf3s5hj0ej6q" path="res://Game States/q0/sfx/q0_bgmusic.mp3" id="2_hxalc"]
+[ext_resource type="Texture2D" uid="uid://bgfb64p7ti8n4" path="res://Game States/q0/vfx/-m Main Menu.png" id="3_b6y1v"]
+[ext_resource type="Texture2D" uid="uid://87ir4jpyya5n" path="res://Game States/q0/vfx/Main Menu [PLAY].png" id="4_aap7v"]
+[ext_resource type="Texture2D" uid="uid://byfkbe3y147j0" path="res://Game States/q0/vfx/Main Menu [DEMO].png" id="5_i7m86"]
+[ext_resource type="Texture2D" uid="uid://fvt55nkvbrwa" path="res://Game States/q0/vfx/Main Menu [EXIT].png" id="6_otifi"]
+[ext_resource type="Texture2D" uid="uid://c8v3ha7ghlgy4" path="res://Game States/q0/vfx/Sound Button.png" id="7_uh126"]
+
+[node name="q0" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1282.0
+offset_bottom = 725.0
+script = ExtResource("1_qtdd7")
+
+[node name="q0_bgmusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_hxalc")
+autoplay = true
+
+[node name="-mMainMenu" type="Sprite2D" parent="."]
+scale = Vector2(0.667, 0.667)
+texture = ExtResource("3_b6y1v")
+centered = false
+
+[node name="Play" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 460.0
+offset_right = 845.0
+offset_bottom = 565.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("4_aap7v")
+
+[node name="Demo" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 542.0
+offset_right = 845.0
+offset_bottom = 647.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("5_i7m86")
+
+[node name="Exit" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 626.0
+offset_right = 845.0
+offset_bottom = 731.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("6_otifi")
+
+[node name="Sound" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1167.0
+offset_top = 56.0
+offset_right = 1220.0
+offset_bottom = 104.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("7_uh126")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Demo" to="." method="_on_demo_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Sound" to="." method="_on_sound_pressed"]
+[connection signal="ready" from="Sound" to="." method="_on_sound_ready"]
+[connection signal="toggled" from="Sound" to="." method="_on_sound_toggled"]
