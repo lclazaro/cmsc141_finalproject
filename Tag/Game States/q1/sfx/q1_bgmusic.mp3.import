@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccdb0day850nj"
+path="res://.godot/imported/q1_bgmusic.mp3-1e0f1d64c032a5f192094253779df162.mp3str"
+
+[deps]
+
+source_file="res://Game States/q1/sfx/q1_bgmusic.mp3"
+dest_files=["res://.godot/imported/q1_bgmusic.mp3-1e0f1d64c032a5f192094253779df162.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

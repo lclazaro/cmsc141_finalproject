@@ -1,3 +1,34 @@
-[gd_scene format=3 uid="uid://cdqxn5qat008g"]
+[gd_scene load_steps=5 format=3 uid="uid://d0x21mir2se1j"]
+
+[ext_resource type="Texture2D" uid="uid://cnbhdcnqyca71" path="res://Game States/q4/vfx/main.png" id="1_3fb4s"]
+[ext_resource type="Script" path="res://Game States/q4/q4.gd" id="1_cmhry"]
+[ext_resource type="Texture2D" uid="uid://b7p6odijpbyqw" path="res://Game States/q4/vfx/pause button.png" id="2_ohfvy"]
+[ext_resource type="Texture2D" uid="uid://bn2xx0fjl1ggc" path="res://Game States/q4/vfx/Sound Button.png" id="3_amvx0"]
 
 [node name="Q4" type="Node2D"]
+script = ExtResource("1_cmhry")
+
+[node name="Pause" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1116.0
+offset_top = 60.0
+offset_right = 1162.0
+offset_bottom = 106.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("2_ohfvy")
+
+[node name="Sound" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 1168.0
+offset_top = 56.0
+offset_right = 1221.0
+offset_bottom = 104.0
+scale = Vector2(0.667, 0.667)
+texture_normal = ExtResource("3_amvx0")
+
+[node name="Main" type="Sprite2D" parent="."]
+position = Vector2(602, 412)
+texture = ExtResource("1_3fb4s")
+
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="Sound" to="." method="_on_sound_pressed"]

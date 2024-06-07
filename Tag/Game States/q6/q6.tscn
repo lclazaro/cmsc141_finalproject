@@ -1,13 +1,16 @@
 [gd_scene load_steps=7 format=3 uid="uid://bctxlh7lvmyj6"]
 
 [ext_resource type="Texture2D" uid="uid://byhg6m7yp5vs4" path="res://Game States/q6/vfx/-m WIN phase (2).png" id="1_6kxj5"]
+[ext_resource type="Script" path="res://Game States/q6/q6.gd" id="1_vrij8"]
 [ext_resource type="Texture2D" uid="uid://dakl3femvsy7r" path="res://Game States/q6/vfx/restart button [Win Lost Phase].png" id="2_88gga"]
 [ext_resource type="Texture2D" uid="uid://cfwywpkd0313o" path="res://Game States/q6/vfx/restart button [Win Lost Phase] (1).png" id="3_cit8l"]
 [ext_resource type="Texture2D" uid="uid://b5e2814hnkf5g" path="res://Game States/q6/vfx/exit button [Win Lost Phase].png" id="4_qke8n"]
 [ext_resource type="Texture2D" uid="uid://bingeutwjcd5i" path="res://Game States/q6/vfx/exit button [Win Lost Phase] (1).png" id="5_fuwdd"]
-[ext_resource type="Texture2D" uid="uid://bammogadgipi8" path="res://Game States/q6/vfx/Sound Button.png" id="6_hpn8t"]
 
-[node name="Q6" type="Node2D"]
+[node name="Q6" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vrij8")
 
 [node name="-mWinPhase(2)" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -16,6 +19,7 @@ texture = ExtResource("1_6kxj5")
 centered = false
 
 [node name="Restart" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 531.0
 offset_top = 433.0
 offset_right = 859.0
@@ -26,6 +30,7 @@ texture_hover = ExtResource("3_cit8l")
 
 [node name="Exit" type="TextureButton" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 531.0
 offset_top = 520.0
 offset_right = 859.0
@@ -34,11 +39,5 @@ scale = Vector2(0.667, 0.667)
 texture_normal = ExtResource("4_qke8n")
 texture_hover = ExtResource("5_fuwdd")
 
-[node name="Sound" type="TextureButton" parent="."]
-texture_filter = 1
-offset_left = 1167.0
-offset_top = 56.0
-offset_right = 1220.0
-offset_bottom = 104.0
-scale = Vector2(0.667, 0.667)
-texture_normal = ExtResource("6_hpn8t")
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
