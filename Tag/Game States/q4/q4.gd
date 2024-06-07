@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 
 var music = AudioServer.get_bus_index("Master")
 @onready var sound = $Sound

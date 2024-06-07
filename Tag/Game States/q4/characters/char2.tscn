@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=3 uid="uid://c7q7i0mc5hfl5"]
+
+[ext_resource type="Texture2D" uid="uid://cgp7okepfsw17" path="res://Game States/q4/vfx/sprite01.png" id="1_lfd5q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qos2j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkkmn"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(0, 0, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5l0yv"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(92, 0, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko60v"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(0, 108, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ace6e"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(92, 108, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uijk0"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(0, 36, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1sym4"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(92, 36, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6c8dk"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(0, 72, 32, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6g64"]
+atlas = ExtResource("1_lfd5q")
+region = Rect2(92, 72, 32, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_65a2o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkkmn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5l0yv")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko60v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ace6e")
+}],
+"loop": true,
+"name": &"left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uijk0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1sym4")
+}],
+"loop": false,
+"name": &"right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6c8dk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6g64")
+}],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}]
+
+[node name="Char2" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+shape = SubResource("CapsuleShape2D_qos2j")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_65a2o")
+animation = &"right"
+frame_progress = 0.586839
