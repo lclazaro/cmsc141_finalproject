@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://dhjxp0vaufgr3"]
+[gd_scene load_steps=13 format=3 uid="uid://dhjxp0vaufgr3"]
 
+[ext_resource type="Script" path="res://Game States/q4/characters/mainchar.gd" id="1_iompe"]
 [ext_resource type="Texture2D" uid="uid://cgp7okepfsw17" path="res://Game States/q4/vfx/sprite01.png" id="1_ra0l6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qos2j"]
@@ -84,11 +85,13 @@ animations = [{
 }]
 
 [node name="Mainchar" type="CharacterBody2D"]
+script = ExtResource("1_iompe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1
 shape = SubResource("CapsuleShape2D_qos2j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_65a2o")
 animation = &"down"

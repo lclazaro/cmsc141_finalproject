@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://fp3esxneam25"]
+
+[ext_resource type="PackedScene" uid="uid://d1pv8t6of733b" path="res://Game States/q4/objects/objectshide.tscn" id="1_rq3qr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kh8y"]
+size = Vector2(89, 32)
+
+[node name="Nobjectshide" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(176.25, 430)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(176.25, 430)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(194, 306)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(148, 311)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+position = Vector2(115.156, 359)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+position = Vector2(559, 455)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="."]
+position = Vector2(298, 331)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="."]
+position = Vector2(156, 589)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="."]
+position = Vector2(353.625, 557)
+shape = SubResource("RectangleShape2D_1kh8y")
+
+[node name="Objects - hide" parent="." instance=ExtResource("1_rq3qr")]

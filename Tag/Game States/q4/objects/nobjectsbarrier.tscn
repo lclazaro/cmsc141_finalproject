@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5fxd8nu8upj"]
+
+[ext_resource type="PackedScene" uid="uid://0r5j31maulgv" path="res://Game States/q4/objects/objectsbarrier.tscn" id="1_4tydy"]
+
+[node name="Nobjectsbarrier" type="CharacterBody2D"]
+
+[node name="Objects - barrier" parent="." instance=ExtResource("1_4tydy")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -24,3 +24,6 @@ func _on_sound_pressed():
 		sound.texture_normal = preload("res://Game States/q2/vfx/Sound Button.png")
 	else:
 		sound.texture_normal = preload("res://Game States/q2/vfx/Mute Button.png")
+
+func _on_start_pressed():
+	get_tree().change_scene_to_file("res://Game States/q1/q1.tscn")

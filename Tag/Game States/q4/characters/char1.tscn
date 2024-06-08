@@ -90,5 +90,6 @@ texture_filter = 1
 shape = SubResource("CapsuleShape2D_qos2j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_65a2o")
 animation = &"down"
